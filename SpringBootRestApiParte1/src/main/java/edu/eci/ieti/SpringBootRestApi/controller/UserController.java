@@ -24,30 +24,30 @@ public class UserController {
     @GetMapping
     public ResponseEntity<List<User>> all()
     {
-        return new ResponseEntity<>(userService.all(), HttpStatus.OK);
+        return new ResponseEntity<>(this.userService.all(), HttpStatus.OK);
     }
 
     @GetMapping( "/{id}" )
     public ResponseEntity<User> findById( @PathVariable String id )
     {
-        return new ResponseEntity<> (userService.findById(id), HttpStatus.OK);
+        return new ResponseEntity<> (this.userService.findById(id), HttpStatus.OK);
     }
 
     @PostMapping
     public ResponseEntity<User> create( @RequestBody UserDto userDto )
     {
-        return new ResponseEntity<> (userService.create(new User(userDto)), HttpStatus.OK);
+        return new ResponseEntity<> (this.userService.create(new User(userDto)), HttpStatus.OK);
     }
 
     @PutMapping( "/{id}" )
     public ResponseEntity<User> update( @RequestBody UserDto userDto, @PathVariable String id )
     {
-        return new ResponseEntity<>(userService.update(new User(userDto),id), HttpStatus.OK);
+        return new ResponseEntity<>(this.userService.update(new User(userDto),id), HttpStatus.OK);
     }
     @DeleteMapping( "/{id}" )
     public ResponseEntity<Boolean> delete( @PathVariable String id )
     {
-        return new ResponseEntity(userService.deleteById(id), HttpStatus.OK);
+        return new ResponseEntity(this.userService.deleteById(id), HttpStatus.OK);
     }
 
 }
