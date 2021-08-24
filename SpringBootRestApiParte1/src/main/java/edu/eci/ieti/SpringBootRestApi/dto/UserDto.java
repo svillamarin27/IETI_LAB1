@@ -6,14 +6,19 @@ public class UserDto {
     private final String email;
     private final String lastName;
     private final String createdAt;
+    private final String id;
 
 
+    public String getId() {
+        return id;
+    }
 
-    public UserDto(String name, String email, String lastName, String createdAt) {
+    public UserDto(String name, String email, String lastName, String createdAt, String id) {
         this.name = name;
         this.email = email;
         this.lastName = lastName;
         this.createdAt = createdAt;
+        this.id = id;
     }
 
     public String getName() {
