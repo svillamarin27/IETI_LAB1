@@ -1,9 +1,8 @@
-package edu.eci.ieti.SpringBootRestApi.controller;
+package edu.eci.ieti.SpringBootRestApi.parte1.controller;
 
-
-import edu.eci.ieti.SpringBootRestApi.data.User;
-import edu.eci.ieti.SpringBootRestApi.dto.UserDto;
-import edu.eci.ieti.SpringBootRestApi.service.UserService;
+import edu.eci.ieti.SpringBootRestApi.parte1.data.User;
+import edu.eci.ieti.SpringBootRestApi.parte1.dto.UserDto;
+import edu.eci.ieti.SpringBootRestApi.parte1.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -40,7 +39,7 @@ public class UserController {
     }
 
     @PutMapping( "/{id}" )
-    public ResponseEntity<User> update( @RequestBody UserDto userDto, @PathVariable String id )
+    public ResponseEntity<User> update(@RequestBody UserDto userDto, @PathVariable String id )
     {
         return new ResponseEntity<>(this.userService.update(new User(userDto),id), HttpStatus.OK);
     }

@@ -1,10 +1,10 @@
-package java.edu.eci.ieti.SpringBootRestApi;
+package edu.eci.ieti.SpringBootRestApi.parte1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringBootRestApiApplicationTests {
+class Parte1ApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,7 +1,7 @@
-package edu.eci.ieti.SpringBootRestApi.service.impl;
+package edu.eci.ieti.SpringBootRestApi.parte1.service.impl;
 
-import edu.eci.ieti.SpringBootRestApi.data.User;
-import edu.eci.ieti.SpringBootRestApi.service.UserService;
+import edu.eci.ieti.SpringBootRestApi.parte1.data.User;
+import edu.eci.ieti.SpringBootRestApi.parte1.service.UserService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

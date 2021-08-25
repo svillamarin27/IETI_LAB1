@@ -1,4 +1,4 @@
-package edu.eci.ieti.SpringBootRestApi.dto;
+package edu.eci.ieti.SpringBootRestApi.parte1.dto;
 
 public class UserDto {
 

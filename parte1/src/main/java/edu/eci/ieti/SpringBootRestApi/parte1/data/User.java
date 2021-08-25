@@ -1,6 +1,6 @@
-package edu.eci.ieti.SpringBootRestApi.data;
+package edu.eci.ieti.SpringBootRestApi.parte1.data;
 
-import edu.eci.ieti.SpringBootRestApi.dto.UserDto;
+import edu.eci.ieti.SpringBootRestApi.parte1.dto.UserDto;
 
 public class User {
 
@@ -67,4 +67,4 @@ public class User {
     public void setCreatedAt(String createdAt) {
         this.createdAt = createdAt;
     }
-}
+    }
