@@ -1,0 +1,6 @@
+edu\eci\ieti\SpringBootRestApi\parte1\service\impl\UserServiceHashMap.class
+edu\eci\ieti\SpringBootRestApi\parte1\service\UserService.class
+edu\eci\ieti\SpringBootRestApi\parte1\Parte1Application.class
+edu\eci\ieti\SpringBootRestApi\parte1\dto\UserDto.class
+edu\eci\ieti\SpringBootRestApi\parte1\controller\UserController.class
+edu\eci\ieti\SpringBootRestApi\parte1\data\User.class
