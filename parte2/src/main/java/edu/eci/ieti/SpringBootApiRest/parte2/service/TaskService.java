@@ -8,6 +8,6 @@ public interface TaskService {
     Task create(Task task );
     Task findById( String id );
     List<Task> all();
-    void deleteById( String id );
+    Task deleteById(String id );
     Task update( Task task, String id );
 }

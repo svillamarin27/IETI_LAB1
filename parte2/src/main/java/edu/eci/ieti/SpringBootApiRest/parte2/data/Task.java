@@ -1,5 +1,7 @@
 package edu.eci.ieti.SpringBootApiRest.parte2.data;
 
+import edu.eci.ieti.SpringBootApiRest.parte2.dto.TaskDto;
+
 public class Task {
 
     private String id;
@@ -12,6 +14,16 @@ public class Task {
     private Status status;
 
     public Task(String id, String name, String description, String assignedTo, String dueDate, String created, Status status) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.assignedTo = assignedTo;
+        this.dueDate = dueDate;
+        this.created = created;
+        this.status = status;
+    }
+
+    public Task(TaskDto taskDto) {
         this.id = id;
         this.name = name;
         this.description = description;
